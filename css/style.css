@@ -149,7 +149,7 @@ th, td {
 /* modules */
 
 .modules-page {
-  background-image: url(/image/figure.jpg);
+  background-image: url(/weblayout/image/figure.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   padding-bottom: 640px;
@@ -170,15 +170,17 @@ th, td {
   padding-bottom: 61px;
 }
 
-.modules-container h1{
+.modules-page-header-text{
   margin: 0;
   margin-top: 107px;
   font-size: 48px;
+  margin-left: 45px;
 }
 
 .modules-list {
   padding: 0;
   margin: 0;
+  text-align: center;
   margin-top: 84px;
   list-style: none;
 }
@@ -186,15 +188,15 @@ th, td {
 .modules-card-subtitle {
   font-size: 36px;
   color: #2f1ce4;
-  padding-top: 100px;
-  padding-left: 50px;
+  padding-top: 180px;
+  text-align: center;
 }
 
 .list-program {
   margin: 0;
   padding: 0;
   margin-left: 50px;
-  padding-top: 30px;
+  text-align: left;
   list-style: none;
 }
 
@@ -210,26 +212,26 @@ th, td {
   margin-bottom: 60px;
   vertical-align: middle;
   position: relative;
-box-shadow: 0 0 10px #dedede;
+  box-shadow: 0 0 10px #dedede;
 }
 
 .introduction-card {
-  background-image: url(/image/photo-1530435460869-d13625c69bbf.jpg);
+  background-image: url(/weblayout/image/photo-1530435460869-d13625c69bbf.jpg);
   background-repeat: no-repeat;
 }
 
 .basic-html-card {
-  background-image: url(/image/photo-1516101922849-2bf0be616449.jpg);
+  background-image: url(/weblayout//image/photo-1516101922849-2bf0be616449.jpg);
   background-repeat: no-repeat;
 }
 
 .basic-css-card {
-  background-image: url(/image/photo-1507721999472-8ed4421c4af2.jpg);
+  background-image: url(/weblayout//image/photo-1507721999472-8ed4421c4af2.jpg);
   background-repeat: no-repeat;
 }
 
 .layout-work {
-  background-image: url(/image/photo-1539278670307-a69d04dc8a75.jpg);
+  background-image: url(/weblayout//image/photo-1539278670307-a69d04dc8a75.jpg);
   background-repeat: no-repeat;
 }
 
@@ -243,7 +245,7 @@ box-shadow: 0 0 10px #dedede;
 
 .button-center {
   text-align: center;
-  margin-right: 150px;
+  margin-right: 60px;
 }
 
 .show-more {
