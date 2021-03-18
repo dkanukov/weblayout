@@ -257,6 +257,90 @@ th, td {
   border: 1px solid #2f1ce4;
 }
 
+/* hotels header */
+
+.container {
+  max-width: 1920px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+}
+
+.header-log-in {
+  margin-left: auto;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-nav-list {
+  flex-grow: 1;
+  display: flex;
+}
+
+.nav-list-item {
+  margin-right: 45px;
+}
+
+.special-offer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.special-offer-item {
+  flex: 1 0 50%
+}
+.offers-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.offers-list-item {
+  flex: 1 0 50%
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.features-list-item {
+  flex: 1 0 25%
+}
+
+.hotel-card-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.hotel-card-list-item {
+  flex: 1 0 30%
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
