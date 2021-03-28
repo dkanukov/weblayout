@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Graphik LCG';
-  src: url('../fonts/GraphikLCG-Medium.woff2') format('woff2'),
-    url('../fonts/GraphikLCG-Medium.woff') format('woff');
+  src: url('/07_layout-stylization/fonts/GraphikLCG-Medium.woff2') format('woff2'),
+    url('/07_layout-stylization/fonts/GraphikLCG-Medium.woff') format('woff');
   font-display: swap;
   font-weight: 500;
   font-style: normal;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
-    url('../fonts/Gilroy-Regular.woff') format('woff');
+  src: url('/07_layout-stylization/fonts/Gilroy-Regular.woff2') format('woff2'),
+    url('/07_layout-stylization/fonts/Gilroy-Regular.woff') format('woff');
   font-display: swap;
   font-weight: normal;
   font-style: normal;
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('../fonts/Gilroy-ExtraBold.woff2') format('woff2'),
-    url('../fonts/Gilroy-ExtraBold.woff') format('woff');
+  src: url('/07_layout-stylization/fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+    url('/07_layout-stylization/fonts/Gilroy-ExtraBold.woff') format('woff');
   font-display: swap;
   font-weight: 800;
   font-style: normal;
@@ -27,8 +27,8 @@
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('../fonts/Gilroy-Medium.woff2') format('woff2'),
-    url('../fonts/Gilroy-Medium.woff') format('woff');
+  src: url('/07_layout-stylization/fonts/Gilroy-Medium.woff2') format('woff2'),
+    url('/07_layout-stylization/fonts/Gilroy-Medium.woff') format('woff');
   font-display: swap;
   font-weight: 500;
   font-style: normal;
@@ -86,7 +86,7 @@ a {
 
 /* program */
 
-.container {
+.container-program {
   width: 1170px;
   margin: 0 auto;
   padding-top: 30px;
@@ -259,30 +259,66 @@ th, td {
 
 /* hotels header */
 
-.container {
-  max-width: 1920px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-hotels {
+  background-color: #E5E5E5;
+  max-width: 1170px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.container ul {
+.container-hotels ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 .header{
+  margin-top: 30px;
+  margin-bottom: 40px;
   display: flex;
   align-items: center;
 }
 
+.header-phone {
+  margin-left: 40px;
+}
+
 .header-log-in {
   margin-left: auto;
+  position: relative;
+}
+
+.header-log-in::before{
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 12px;
+  background-image: url(/07_layout-stylization/image/Vectorarrow.svg);
+  background-repeat: no-repeat;
+  left: -40px;
+  top: 2px;
 }
 
 .header-nav {
   display: flex;
   justify-content: flex-end;
+  background-color: #fff;
+  border: 1px solid white;
+  border-radius: 15px;
 }
 
 .header-nav-list {
@@ -297,6 +333,12 @@ th, td {
 .special-offer {
   display: flex;
   flex-wrap: wrap;
+}
+
+.special-offer-maldivs {
+  background-image: url(/07_layout-stylization/image/DARKEN.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .special-offer-item {
