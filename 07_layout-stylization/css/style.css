@@ -315,13 +315,15 @@ th, td {
 
 .header-nav {
   display: flex;
+  align-items: center;
   justify-content: flex-end;
   background-color: #fff;
-  border: 1px solid white;
+  border: 22px solid white;
   border-radius: 15px;
 }
 
 .header-nav-list {
+  position: relative;
   flex-grow: 1;
   display: flex;
 }
@@ -330,20 +332,87 @@ th, td {
   margin-right: 45px;
 }
 
+.button {
+  height: 42px;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+  color: #CC9933;
+  background-color: #fff;
+}
+
+.want-tour-btn {
+  width: 107px;
+  margin-right: 36px;
+
+}
+
+.recall-btn {
+  width: 177px;
+  margin-right: 23px;
+}
+
+.header-nav-list::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 50px;
+  background-color: #E1E1E1;
+  left: 700px;
+  bottom: -15px;
+}
+
 .special-offer {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 600px;
+}
+
+/* .card-text {
+  min-width: 100px;
+  width: auto;
+  display:inline-block;
+} */
+
+.special-offer-item {
+  color: #ffff;
+  padding-left: 40px;
 }
 
 .special-offer-maldivs {
-  background-image: url(/07_layout-stylization/image/DARKEN.png);
+  padding-bottom: 174px;
+  background-image: url(/07_layout-stylization/image/Rectangle\ 14.png);
   background-repeat: no-repeat;
   background-position: 0 0;
+  flex: 0 1 50%;
 }
 
-.special-offer-item {
-  flex: 1 0 50%
+.special-offer-Crit {
+  background-image: url(/07_layout-stylization/image/Rectangle\ 16.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-bottom: 180px;
+  flex: 0 1 50%;
 }
+
+.special-offer-rooms {
+  background-image: url(/07_layout-stylization/image/33\ 1.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  flex: 1 0 50%;
+  padding-bottom: 700px;
+  margin-left: -35px;
+}
+
+.about {
+  margin-top: -13px;
+  max-width: 888px;
+}
+
+.offers {
+  margin-top: 60px;
+}
+
 .offers-list {
   display: flex;
   flex-wrap: wrap;
