@@ -368,12 +368,6 @@ th, td {
   max-height: 600px;
 }
 
-/* .card-text {
-  min-width: 100px;
-  width: auto;
-  display:inline-block;
-} */
-
 .special-offer-item {
   color: #ffff;
   padding-left: 40px;
@@ -424,12 +418,58 @@ th, td {
 
 .features-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .features-list-item {
-  flex: 1 0 25%
+  margin-top: 25px;
+  flex: 0 1 25%;
+  max-width: 275px;
+  max-height: 275px;
+  border: 0px solid red;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.features-list-item {
+  padding-left: 45px;
+  padding-top: 116px;
+  background-repeat: no-repeat;
+  background-position: 45px 40px;
+  background-size: 66px 66px;
+}
+
+.features-list-item-1 {
+  background-image: url("/07_layout-stylization/image/bathtub.svg");
+}
+
+.features-list-item-2 {
+  background-image: url("/07_layout-stylization/image/hanger.svg");
+}
+
+.features-list-item-3 {
+  background-image: url("/07_layout-stylization/image/heating.svg");
+}
+
+.features-list-item-4 {
+  background-image: url("/07_layout-stylization/image/hotel-key.svg");
+}
+
+.features-list-item-5 {
+  background-image: url("/07_layout-stylization/image/parking.svg");
+}
+
+.features-list-item-6 {
+  background-image: url("/07_layout-stylization/image/reception.svg");
+}
+
+.features-list-item-7 {
+  background-image: url("/07_layout-stylization/image/security-box.svg");
+}
+
+.features-list-item-8 {
+  background-image: url("/07_layout-stylization/image/swimming-pool.svg");
 }
 
 .hotel-card-list {
@@ -442,7 +482,48 @@ th, td {
   flex: 1 0 30%
 }
 
+.offers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+
+.offers-list-card {
+  margin-bottom: 23px;
+  border: 1px solid white;
+  border-radius: 15px 15px 0px 0px;
+  background-color: white;
+  height: 330px;
+  width: 573px;
+}
+
+.offer-list-item-link {
+  color: #CC9933;
+}
+
+.offers-list-item h3 {
+  position: relative;
+  margin-left: 35px;
+}
+
+.offers-list-item h3::after{
+  display: inline-block;
+  position: relative;
+  content: "";
+  width: 11px;
+  height: 11px;
+  border: solid #CC9933;
+  border-width: 0 2px 2px 0;
+  transform: rotate(-45deg);
+  left: 5px;
+  top: 1.5px;
+}
+
+.offers-list-item p {
+  margin-left: 35px;
+  line-height: 28px;
+}
 
 
 
