@@ -520,9 +520,50 @@ th, td {
   top: 1.5px;
 }
 
+.hotel-room-btn {
+  margin-left: 45px;
+  margin-top: 20px;
+  margin-bottom: 41px;
+  max-width: 100px;
+  min-height: 42px;
+
+}
+
 .offers-list-item p {
   margin-left: 35px;
   line-height: 28px;
+}
+
+.hotel-location {
+  color: #999999;
+}
+
+.hotel-card-list-item p{
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
+  margin-left: 45px;
+}
+
+.hotel-card-list-item {
+  max-height: 440px;
+  max-width: 374px;
+  border-radius: 15px;
+  background-color: #fff;
+  margin-bottom: 25px;
+}
+
+.hotel-card-list-item-last-card {
+  padding-top: 300px;
+  color: white;
+  background-image: url("/07_layout-stylization/image/41.png");
+}
+
+.hotel-card-list-item-last-card a {
+  margin-left: 54px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
 }
 
 
