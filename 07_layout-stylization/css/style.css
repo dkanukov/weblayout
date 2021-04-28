@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Graphik LCG';
-  src: url('/07_layout-stylization/fonts/GraphikLCG-Medium.woff2') format('woff2'),
-    url('/07_layout-stylization/fonts/GraphikLCG-Medium.woff') format('woff');
+  src: url('../fonts/GraphikLCG-Medium.woff2') format('woff2'),
+    url('../fonts/GraphikLCG-Medium.woff') format('woff');
   font-display: swap;
   font-weight: 500;
   font-style: normal;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('/07_layout-stylization/fonts/Gilroy-Regular.woff2') format('woff2'),
-    url('/07_layout-stylization/fonts/Gilroy-Regular.woff') format('woff');
+  src: url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+    url('../fonts/Gilroy-Regular.woff') format('woff');
   font-display: swap;
   font-weight: normal;
   font-style: normal;
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('/07_layout-stylization/fonts/Gilroy-ExtraBold.woff2') format('woff2'),
-    url('/07_layout-stylization/fonts/Gilroy-ExtraBold.woff') format('woff');
+  src: url('../fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Gilroy-ExtraBold.woff') format('woff');
   font-display: swap;
   font-weight: 800;
   font-style: normal;
@@ -27,8 +27,8 @@
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('/07_layout-stylization/fonts/Gilroy-Medium.woff2') format('woff2'),
-    url('/07_layout-stylization/fonts/Gilroy-Medium.woff') format('woff');
+  src: url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+    url('../fonts/Gilroy-Medium.woff') format('woff');
   font-display: swap;
   font-weight: 500;
   font-style: normal;
@@ -271,7 +271,13 @@ th, td {
 
 
 
-
+h2 {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 40px;
+}
 
 .container-hotels {
   background-color: #E5E5E5;
@@ -371,36 +377,88 @@ th, td {
 .special-offer-item {
   color: #ffff;
   padding-left: 40px;
+  border-radius: 15px;
+}
+
+.special-offer-item p {
+  margin-bottom: 44px;
+}
+
+.more-link {
+  max-width: 100px;
+  display: block;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  color: #FFCC66;
+}
+
+.more-link::after{
+  display: inline-block;
+  position: relative;
+  content: "";
+  width: 11px;
+  height: 11px;
+  border: solid #CC9933;
+  border-width: 0 2px 2px 0;
+  transform: rotate(-45deg);
+  left: 5px;
+  top: 2px;
+
+}
+
+.special-offer-item h1 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.special-offer-rooms h1 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-top: 211px;
 }
 
 .special-offer-maldivs {
-  padding-bottom: 174px;
+  padding-bottom: 69px;
   background-image: url(/07_layout-stylization/image/Rectangle\ 14.png);
   background-repeat: no-repeat;
   background-position: 0 0;
-  flex: 0 1 50%;
+  flex: 0 0 50%;
 }
 
 .special-offer-Crit {
+  padding-bottom: 80px;
   background-image: url(/07_layout-stylization/image/Rectangle\ 16.png);
   background-repeat: no-repeat;
   background-position: 0 0;
-  padding-bottom: 180px;
-  flex: 0 1 50%;
+  flex: 0 0 50%;
 }
 
 .special-offer-rooms {
   background-image: url(/07_layout-stylization/image/33\ 1.jpg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  flex: 1 0 50%;
-  padding-bottom: 700px;
-  margin-left: -35px;
+  flex: 0 0 100%;
+  padding-right: 72px;
+  padding-bottom: 125px;
 }
 
 .about {
   margin-top: -13px;
   max-width: 888px;
+}
+
+.about-txt {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+
 }
 
 .offers {
@@ -416,6 +474,19 @@ th, td {
   flex: 1 0 50%
 }
 
+.features {
+  margin-bottom: 70px;
+}
+
+.features p {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .features-list {
   display: flex;
   justify-content: space-between;
@@ -427,7 +498,6 @@ th, td {
   flex: 0 1 25%;
   max-width: 275px;
   max-height: 275px;
-  border: 0px solid red;
   border-radius: 15px;
   background-color: #fff;
 }
@@ -478,6 +548,16 @@ th, td {
   flex-wrap: wrap;
 }
 
+.stars {
+  position: absolute;
+  margin-top: 17px;
+  margin-left: 213px;
+}
+
+.hotel-price {
+  font-weight: bold;
+}
+
 .hotel-card-list-item {
   flex: 1 0 30%
 }
@@ -491,11 +571,11 @@ th, td {
 
 .offers-list-card {
   margin-bottom: 23px;
-  border: 1px solid white;
-  border-radius: 15px 15px 0px 0px;
+  border: 0px solid white;
+  border-radius: 15px 15px 15px 15px;
   background-color: white;
   height: 330px;
-  width: 573px;
+  width: 572.5px;
 }
 
 .offer-list-item-link {
