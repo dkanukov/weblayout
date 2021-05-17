@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Graphik LCG';
-  src: url('../fonts/GraphikLCG-Medium.woff2') format('woff2'),
+  src: url('/fonts/GraphikLCG-Medium.woff2') format('woff2'),
     url('../fonts/GraphikLCG-Medium.woff') format('woff');
   font-display: swap;
   font-weight: 500;
@@ -149,7 +149,7 @@ th, td {
 /* modules */
 
 .modules-page {
-  background-image: url(/weblayout/image/figure.jpg);
+  background-image: url(/image/figure.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   padding-bottom: 640px;
@@ -216,22 +216,22 @@ th, td {
 }
 
 .introduction-card {
-  background-image: url(/weblayout/image/photo-1530435460869-d13625c69bbf.jpg);
+  background-image: url(/image/photo-1530435460869-d13625c69bbf.jpg);
   background-repeat: no-repeat;
 }
 
 .basic-html-card {
-  background-image: url(/weblayout//image/photo-1516101922849-2bf0be616449.jpg);
+  background-image: url(//image/photo-1516101922849-2bf0be616449.jpg);
   background-repeat: no-repeat;
 }
 
 .basic-css-card {
-  background-image: url(/weblayout//image/photo-1507721999472-8ed4421c4af2.jpg);
+  background-image: url(//image/photo-1507721999472-8ed4421c4af2.jpg);
   background-repeat: no-repeat;
 }
 
 .layout-work {
-  background-image: url(/weblayout//image/photo-1539278670307-a69d04dc8a75.jpg);
+  background-image: url(//image/photo-1539278670307-a69d04dc8a75.jpg);
   background-repeat: no-repeat;
 }
 
@@ -313,7 +313,7 @@ h2 {
   position: absolute;
   width: 21px;
   height: 12px;
-  background-image: url(/07_layout-stylization/image/Vectorarrow.svg);
+  background-image: url(/image/Vectorarrow.svg);
   background-repeat: no-repeat;
   left: -40px;
   top: 2px;
@@ -423,7 +423,7 @@ h2 {
 
 .special-offer-maldivs {
   padding-bottom: 69px;
-  background-image: url(/07_layout-stylization/image/Rectangle\ 14.png);
+  background-image: url(/image/Rectangle\ 14.png);
   background-repeat: no-repeat;
   background-position: 0 0;
   flex: 0 0 50%;
@@ -431,14 +431,14 @@ h2 {
 
 .special-offer-Crit {
   padding-bottom: 80px;
-  background-image: url(/07_layout-stylization/image/Rectangle\ 16.png);
+  background-image: url(/image/Rectangle\ 16.png);
   background-repeat: no-repeat;
   background-position: 0 0;
   flex: 0 0 50%;
 }
 
 .special-offer-rooms {
-  background-image: url(/07_layout-stylization/image/33\ 1.jpg);
+  background-image: url(/image/33\ 1.jpg);
   background-repeat: no-repeat;
   background-position: 0 0;
   flex: 0 0 100%;
@@ -511,35 +511,35 @@ h2 {
 }
 
 .features-list-item-1 {
-  background-image: url("/07_layout-stylization/image/bathtub.svg");
+  background-image: url("/image/bathtub.svg");
 }
 
 .features-list-item-2 {
-  background-image: url("/07_layout-stylization/image/hanger.svg");
+  background-image: url("/image/hanger.svg");
 }
 
 .features-list-item-3 {
-  background-image: url("/07_layout-stylization/image/heating.svg");
+  background-image: url("/image/heating.svg");
 }
 
 .features-list-item-4 {
-  background-image: url("/07_layout-stylization/image/hotel-key.svg");
+  background-image: url("/image/hotel-key.svg");
 }
 
 .features-list-item-5 {
-  background-image: url("/07_layout-stylization/image/parking.svg");
+  background-image: url("/image/parking.svg");
 }
 
 .features-list-item-6 {
-  background-image: url("/07_layout-stylization/image/reception.svg");
+  background-image: url("/image/reception.svg");
 }
 
 .features-list-item-7 {
-  background-image: url("/07_layout-stylization/image/security-box.svg");
+  background-image: url("/image/security-box.svg");
 }
 
 .features-list-item-8 {
-  background-image: url("/07_layout-stylization/image/swimming-pool.svg");
+  background-image: url("/image/swimming-pool.svg");
 }
 
 .hotel-card-list {
@@ -636,7 +636,7 @@ h2 {
 .hotel-card-list-item-last-card {
   padding-top: 300px;
   color: white;
-  background-image: url("/07_layout-stylization/image/41.png");
+  background-image: url("/image/41.png");
 }
 
 .hotel-card-list-item-last-card a {
@@ -646,9 +646,102 @@ h2 {
   line-height: 200%;
 }
 
+.want-tour-header {
+  margin: 0;
+  padding-top: 38px;
+  padding-left: 40px;
+}
 
+.want-tour {
+  width: 1170px;
+  height: 274px;
+  background: #E9E9E9;
+  border-radius: 15px;
+}
 
+.labels {
+  font-family: Muller;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  padding-top: 31px;
+}
 
+.country {
+  margin-left: 125px;
+}
+
+.date-arrive {
+  margin-left: 188px;
+}
+
+.nights {
+  margin-left: 100px;
+}
+
+.number-of-guests {
+  margin-left: 120px;
+}
+
+.form {
+  margin-top: 5px;
+}
+
+.want-tour-form {
+  margin-left: 45px;
+  margin-top: 19px;
+  padding-left: 28px;
+  width: 1080px;
+  height: 106px;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+.form-element:not(:first-child):not(:last-child) {
+  margin-left: 34px;
+}
+
+.form-element {
+  position: relative;
+  border: none;
+}
+
+.form-element::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 50px;
+  background-color: #E1E1E1;
+  right: 130px;
+  bottom: 1px;
+}
+
+.country {
+  width: 190px;
+}
+
+.date {
+  width: 142px;
+}
+
+.nights-form {
+  width: 121px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.number-of-guests-form {
+  width: 121px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.btn-submit {
+  margin-left: 50px;
+  margin-top: -32px;
+  width: 108px;
+  height: 50px;
+  border: 1px solid #CC9933;
+}
 
 
 
