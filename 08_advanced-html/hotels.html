@@ -271,28 +271,46 @@
       <h2 class="want-tour-header">Хочу тур</h2>
       <div class="want-tour-form">
         <div class="labels">
-          <label class="city-from" for="city-from">Город вылета</label>
-          <label class="country" for="country">Страна</label>
-          <label class="date-arrive" for="date-arrive">Дата прибытия</label>
-          <label class="nights" for="nights">Ночей</label>
-          <label class="number-of-guests" for="number-of-guests">Туристы</label>
+          <label class="city-from-label" for="city-from">Город вылета</label>
+          <label class="country-label" for="country">Страна</label>
+          <label class="date-arrive-label" for="date-arrive">Дата прибытия</label>
+          <label class="nights-label" for="nights">Ночей</label>
+          <label class="number-of-guests-label" for="number-of-guests">Туристы</label>
         </div>
         <form action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST" class="form">
-          <select class="form-element city-from" name="city-from" id="city-from" size="1" name="[]">
-            <option value="Москва">Москва</option>
-            <option value="Санкт-Петербург">Санкт-Петербург</option>
-            <option value="Пятигорск">Пятигорск</option>
-          </select>
-          <select class="form-element country" name="country" id="country" name="[]">
-            <option value="Австралия">Австралия</option>
-            <option value="Канада">Канада</option>
-            <option value="Франция">Франция</option>
-          </select>
-          <input class="form-element date" type="date" name="date-arrive" id="date-arrive">
-          <input class="form-element nights-form" type="number" name="nights" id="nights" value="6">
-          <input class="form-element number-of-guests-form" type="number" name="number-of-guests" id="number-of-guests"
-            value="2">
-          <button type="submit" class="button btn-submit form-element">Найти</button>
+
+          <div class="form-element form-element-city-form">
+            <select class="city-from" name="city-from" id="city-from" size="1">
+              <option value="Санкт-Петербург">Санкт-Петербург</option>
+              <option value="Москва">Москва</option>
+              <option value="Омск">Омск</option>
+            </select>
+          </div>
+
+          <div class="form-element form-element-country">
+            <select class="country" name="country" id="country">
+              <option value="Австралия">Австралия</option>
+              <option value="Канада">Канада</option>
+              <option value="Франция">Франция</option>
+            </select>
+          </div>
+
+          <div class="form-element form-element-date-arrive">
+            <input class="date-arrive" type="date" name="date-arrive" id="date-arrive">
+          </div>
+
+          <div class="form-element form-element-nights">
+            <input class="nights" type="number" name="nights" id="nights" value="6">
+          </div>
+
+          <div class="form-element form-element-number">
+            <input class="number-of-guest" type="number" name="number-of-guests" id="number-of-guests" value = "2" required>
+          </div>
+
+          <div class="form-element-btn">
+            <button class="button button-find" type="submit" class="button">Найти</button>
+          </div>
+          
         </form>
       </div>
     </div>
@@ -313,8 +331,10 @@
         <div class="contacts-main-block contacts-main-block-email">
           <h3>E-mail</h3>
           <div class="email-adreses">
-            <p class="email-adres-1"> <a href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a> по вопросам<br> бронирования</p>
-            <p class="email-adres-2"> <a href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a> по вопросам<br> сотрудничества</p>
+            <p class="email-adres-1"> <a href="mailto:lg.oona@mail.ru">lg.oona@mail.ru</a> по вопросам<br> бронирования
+            </p>
+            <p class="email-adres-2"> <a href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a> по вопросам<br>
+              сотрудничества</p>
           </div>
         </div>
         <div class="contacts-main-block contacts-main-block-graphic">
@@ -328,10 +348,11 @@
       <div class="footer-main">
         <div class="footer-copyright">
           <p class="footer-copyright-row-1">© 2012-2020 Управляющая компания<br> Объединенной сети «Лагуна Хотелс»</p>
-          <p class="footer-copyright-row-2">Представленная на сайте информация<br> носит справочный характер<br> и не является публичной офертой </p>
+          <p class="footer-copyright-row-2">Представленная на сайте информация<br> носит справочный характер<br> и не
+            является публичной офертой </p>
           <a class="footer-copyright-row-3" href="">Пользовательское соглашение</a>
         </div>
-        <div class="adres">
+        <d`iv class="adres">
           <div class="footer-adres">
             <p class="footer-adres-row-1">11710, улица Юности, дом 5 строение 4, офис 2</p>
             <div class="footer-phones">
@@ -343,7 +364,7 @@
               <a href="mailto:hotels.ln@mail.ru">hotels.ln@mail.ru</a>
             </div>
           </div>
-        </div>
+        </d>
         <div class="social">
           <a href=""><img src="/08_advanced-html/image/tripadvisor.svg" alt="" width="25px" height="25px"></a>
           <a href=""><img src="/08_advanced-html/image/twitter.svg" alt="" width="25px" height="25px"></a>

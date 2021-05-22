@@ -659,78 +659,155 @@ h2 {
   border-radius: 15px;
 }
 
-.labels {
-  font-family: Muller;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 12px;
-  padding-top: 31px;
-}
-
-.country {
-  margin-left: 125px;
-}
-
-.date-arrive {
-  margin-left: 188px;
-}
-
-.nights {
-  margin-left: 100px;
-}
-
-.number-of-guests {
-  margin-left: 120px;
-}
-
-.form {
-  margin-top: 5px;
-}
-
 .want-tour-form {
   margin-left: 45px;
   margin-top: 19px;
-  padding-left: 28px;
+  padding-left: 24px;
   width: 1080px;
   height: 106px;
   background: #FFFFFF;
   border-radius: 15px;
 }
 
-.form-element:not(:first-child):not(:last-child) {
-  margin-left: 34px;
+.labels {
+  padding-top: 31px;
 }
 
-.form-element {
+.city-from-label {
+  padding-left: 5px;
+}
+
+.country-label{
+  padding-left: 90px;
+}
+
+.date-arrive-label {
+  padding-left: 78px;
+}
+
+.nights-label {
+  padding-left: 62px;
+}
+
+.number-of-guests-label {
+  padding-left: 133px;
+}
+
+.form {
+  display: flex;
+  padding-top: 15px;
+}
+
+.city-from {
+  max-width: 169;
   border: none;
-  background-color: #fff;
 }
 
 .country {
-  width: 190px;
+  max-width: 190px;
+  border: none;
 }
 
-.date {
-  width: 142px;
+.date-arrive {
+  max-width: 142px;
+  border: none;
 }
 
-.nights-form {
-  width: 121px;
+.nights {
+  max-width: 142px;
+  border: none;
   border-bottom: 1px solid #CCCCCC;
 }
 
-.number-of-guests-form {
-  width: 121px;
+.number-of-guest {
+  max-width: 142px;
+  border: none;
   border-bottom: 1px solid #CCCCCC;
 }
 
-.btn-submit {
-  margin-left: 50px;
-  margin-top: -32px;
+.form-element-country {
+  margin-left: 41px;
+}
+
+.form-element-date-arrive{
+  margin-left: 41px;
+}
+
+.form-element-nights {
+  margin-left: 41px;
+}
+
+.form-element-number {
+  margin-left: 41px;
+}
+
+.form-element-btn {
+  margin-left: 51px;
+  margin-top: -22px;
+}
+
+.button-find {
   width: 108px;
+  height: 42px;
+}
+
+.form-element {
+  position: relative;
+}
+
+.form-element-city-form::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  background-color: #E1E1E1;
+  width: 1px;
   height: 50px;
-  border: 1px solid #CC9933;
+  left: 173px;
+  bottom: 3px;
+} 
+
+.form-element-country::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  background-color: #E1E1E1;
+  width: 1px;
+  height: 50px;
+  left: 118px;
+  bottom: 3px;
+}
+
+.form-element-date-arrive::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  background-color: #E1E1E1;
+  width: 1px;
+  height: 50px;
+  left: 158px;
+  bottom: 3px;
+}
+
+.form-element-nights::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  background-color: #E1E1E1;
+  width: 1px;
+  height: 50px;
+  left: 158px;
+  bottom: 3px;
+}
+
+.form-element-number::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  background-color: #E1E1E1;
+  width: 1px;
+  height: 50px;
+  left: 165px;
+  bottom: 3px;
 }
 
 .contacts-main {
@@ -768,7 +845,7 @@ h2 {
 }
 
 .phone-number-2 {
-padding-top: 5px;
+  padding-top: 5px;
 }
 
 .email-adreses {
@@ -840,6 +917,7 @@ padding-top: 5px;
 .footer-copyright {
   padding-left: 52px;
   padding-top: 25px;
+  line-height: 30px;
 }
 
 .footer-copyright-row-2 {
@@ -855,6 +933,7 @@ padding-top: 5px;
 .adres {
   padding-top: 25px;
   padding-right: 195px;
+  line-height: 30px;
 }
 
 .footer-adres {
