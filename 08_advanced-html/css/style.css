@@ -819,6 +819,51 @@ h2 {
   background-repeat: no-repeat;
   background-position-x: 471px;
   background-position-y: 44px;
+  position: relative;
+}
+
+.contacts-main-block-adres::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  background-color: #E1E1E1;
+  width: 375px;
+  height: 1px;
+  left: 45px;
+  top: 110px;
+}
+
+.contacts-main-block-phone::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  background-color: #E1E1E1;
+  width: 375px;
+  height: 1px;
+  left: 45px;
+  top: 205px;
+}
+
+.contacts-main-block-email::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  background-color: #E1E1E1;
+  width: 375px;
+  height: 1px;
+  left: 45px;
+  top: 340px;
+}
+
+.contacts-main-block-graphic::after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  background-color: #E1E1E1;
+  width: 375px;
+  height: 1px;
+  left: 45px;
+  top: 450px;
 }
 
 .contacts-main-block {
