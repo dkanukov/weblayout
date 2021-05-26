@@ -1005,6 +1005,7 @@ h2 {
   flex-direction: column;
   padding-top: 44px;
   padding-right: 51px;
+  opacity: 0.5;
 }
 
 .tripadv {
