@@ -1003,8 +1003,46 @@ h2 {
 .social {
   display: flex;
   flex-direction: column;
-  padding-top: 35px;
+  padding-top: 44px;
   padding-right: 51px;
-  justify-content: space-between;
+}
+
+.tripadv {
+  background-image: url("../image/tripadvisor.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+.twitter {
+  background-image: url("../image/twitter.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+.facebook {
+  background-image: url("../image/facebook.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+.vk {
+  background-image: url("../image/social.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+.instagram {
+  background-image: url("../image/instagram.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
 }
 
