@@ -322,7 +322,6 @@ h2 {
 .header-nav {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   background-color: #fff;
   border: 22px solid white;
   border-radius: 15px;
@@ -346,10 +345,10 @@ h2 {
   background-color: #fff;
 }
 
-.want-tour-btn {
+
+.want-tour-btn{
   width: 107px;
   margin-right: 36px;
-
 }
 
 .recall-btn {
@@ -489,8 +488,11 @@ h2 {
 
 .features-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.features-list-item:not(:nth-child(4n)){
+  margin-right: 23px;
 }
 
 .features-list-item {
@@ -544,8 +546,11 @@ h2 {
 
 .hotel-card-list {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.hotel-card-list-item:not(:nth-child(3n)){
+  margin-right: 23px;
 }
 
 .stars {
@@ -565,9 +570,7 @@ h2 {
 .offers-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
-
 
 .offers-list-card {
   margin-bottom: 23px;
@@ -600,12 +603,16 @@ h2 {
   top: 1.5px;
 }
 
+.offers-list-card:not(:nth-child(2n)){
+  margin-right: 23px;
+}
+
 .hotel-room-btn {
   margin-left: 45px;
   margin-top: 20px;
   margin-bottom: 41px;
-  max-width: 100px;
-  min-height: 42px;
+  width: 100px;
+  height: 42px;
 
 }
 
@@ -645,6 +652,8 @@ h2 {
   font-size: 20px;
   line-height: 200%;
 }
+
+.hotel-room-btn
 
 .want-tour-header {
   margin: 0;
@@ -1005,45 +1014,149 @@ h2 {
   flex-direction: column;
   padding-top: 44px;
   padding-right: 51px;
-  opacity: 0.5;
 }
 
 .tripadv {
-  background-image: url("../image/tripadvisor.svg");
-  background-repeat: no-repeat;
-  width: 25px;
-  height: 25px;
   margin-bottom: 20px;
+  opacity: 0.5;
 }
 
 .twitter {
-  background-image: url("../image/twitter.svg");
-  background-repeat: no-repeat;
-  width: 25px;
-  height: 25px;
   margin-bottom: 20px;
 }
 
 .facebook {
-  background-image: url("../image/facebook.svg");
-  background-repeat: no-repeat;
-  width: 25px;
-  height: 25px;
   margin-bottom: 20px;
+  opacity: 0.5;
 }
 
 .vk {
-  background-image: url("../image/social.svg");
-  background-repeat: no-repeat;
-  width: 25px;
-  height: 25px;
   margin-bottom: 20px;
+  opacity: 0.5;
 }
 
 .instagram {
-  background-image: url("../image/instagram.svg");
-  background-repeat: no-repeat;
-  width: 25px;
-  height: 25px;
+  opacity: 0.5;
 }
 
+.tripadv,
+.twitter,
+.facebook, 
+.vk,
+.instagram {
+  transition-property: color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.tripadv:hover,
+.twitter:hover,
+.facebook:hover, 
+.vk:hover,
+.instagram:hover {
+  fill: #CC9933;
+}
+
+.tripadv:focus,
+.twitter:focus,
+.facebook:focus, 
+.vk:focus,
+.instagram:focus {
+  fill: #CC9933;
+}
+
+.tripadv:active,
+.twitter:active,
+.facebook:active, 
+.vk:active,
+.instagram:active {
+  fill: #A47312;
+}
+
+/* Transitions */
+
+.want-tour-btn,
+.recall-btn,
+.hotel-room-btn,
+.button-find,
+.btn-route {
+  transition-property: color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.want-tour-btn:hover,
+.recall-btn:hover,
+.hotel-room-btn:hover,
+.button-find:hover,
+.btn-route:hover {
+  background-color: #CC9933;
+  color: white;
+}
+
+.want-tour-btn:focus,
+.recall-btn:focus,
+.hotel-room-btn:focus,
+.button-find:focus,
+.btn-route:focus {
+  background-color: #CC9933;
+  color: white;
+}
+
+.want-tour-btn:active,
+.recall-btn:active,
+.hotel-room-btn:active,
+.button-find:active,
+.btn-route:active {
+  background-color: #A47312;
+  color: white;
+}
+
+.header-phone,
+.header-log-in,
+.nav-list-item,
+.more-link,
+.offer-list-item-link {
+  transition-property: color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+  cursor: pointer;
+}
+
+.header-phone:hover,
+.header-log-in:hover,
+.nav-list-item:hover {
+  color: #CC9933;
+  transform: scale(1.1, 1.1);
+}
+
+.header-phone:focus,
+.header-log-in:focus,
+.nav-list-item:focus {
+  color: #CC9933;
+}
+
+.header-phone:active,
+.header-log-in:active,
+.nav-list-item:active {
+  color: #A47312;
+}
+
+.more-link:active{
+  color: #FFFFFF;
+  transform: scale(1.1, 1.1);
+}
+
+.offer-list-item-link:hover {
+  color: #E9C479;
+}
+
+.offer-list-item-link:focus {
+  color: #CC9933;
+}
+
+.offer-list-item-link:active {
+  color: #A47312;
+}
