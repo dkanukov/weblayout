@@ -1068,7 +1068,6 @@ h2 {
 
 .tripadv {
   margin-bottom: 20px;
-  opacity: 0.5;
 }
 
 .twitter {
@@ -1077,41 +1076,44 @@ h2 {
 
 .facebook {
   margin-bottom: 20px;
-  opacity: 0.5;
 }
 
 .vk {
   margin-bottom: 20px;
-  opacity: 0.5;
 }
 
-.instagram {
-  opacity: 0.5;
-}
-
-.tripadv:hover img,
-.twitter:hover,
-.facebook:hover, 
-.vk:hover,
-.instagram:hover {
+.background-tripadv:hover,
+.tripadv:focus .background-tripadv {
   fill: #CC9933;
 }
 
-/* .tripadv:focus,
-.twitter:focus,
-.facebook:focus, 
-.vk:focus,
-.instagram:focus {
+.background-twitter:hover,
+.twitter:focus .background-twitter {
   fill: #CC9933;
 }
 
-.tripadv:active,
-.twitter:active,
-.facebook:active, 
-.vk:active,
-.instagram:active {
+.background-facebook:hover,
+.facebook:focus .background-facebook {
+  fill: #CC9933;
+}
+
+.background-vk:hover,
+.vk:focus .background-vk {
+  fill: #CC9933;
+}
+
+.background-instagram:hover,
+.instagram:focus .background-instagram {
+  fill: #CC9933;
+}
+
+.tripadv:active .background-tripadv,
+.twitter:active .background-twitter,
+.facebook:active .background-facebook,
+.vk:active .background-vk,
+.instagram:active .background-instagram {
   fill: #A47312;
-} */
+}
 
 /* Transitions */
 
