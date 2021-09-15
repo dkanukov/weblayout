@@ -49,7 +49,7 @@ a {
 
 .slider {
   margin-left: 75px;
-  padding-bottom: 620px;
+  padding-bottom: 139px;
   background-image: url(../image/slider_photo.png);
   background-repeat: no-repeat;
 }
@@ -73,10 +73,6 @@ a {
   line-height: 29px;
 }
 
-.slider__btn {
-
-}
-
 .slider__btn button {
   margin-left: 80px;
   margin-top: 65px;
@@ -90,4 +86,62 @@ a {
   font-size: 23.4581px;
   line-height: 29px;
   text-align: center;
+}
+
+.about {
+  margin-left: 77px;
+}
+
+.about__text h4 {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.about__text p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.about__card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 46px;
+  height: 622px;
+}
+
+.about__card__left {
+  flex-grow: 1;
+  background-image: url(../image/about_photo.jpg);
+  background-repeat: no-repeat;
+}
+
+.about__card__left__text {
+  display: flex;
+  margin-top: 477px;
+}
+
+.about__card__left__text p {
+  margin-top: -3px;
+  margin-left: 47px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--default-white);
+}
+
+.about__card__left__text button {
+  margin-left: 166px;
+  margin-top: 17px;
+  width: 175px;
+  height: 58px;
+  border: 2px solid var(--default-orange);
+  background-color: Transparent;
+  cursor:pointer;
+  color: var(--default-white);
 }
