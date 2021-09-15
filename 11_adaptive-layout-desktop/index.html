@@ -4,16 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Evklid</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Евклид</title>
 </head>
 
 <body>
     <header>
         <div class="header">
             <div class="header__logo">
-                <img src="./image/Logo.png" alt="Евклид Проектные системы">
+                <img src="image/Logo.png" alt="Евклид Проектные системы">
             </div>
 
             <nav class="header__nav">
@@ -39,24 +42,24 @@
                     </li>
 
                     <li class="header__nav__list__item">
-                        <img class="header__nav__list__search" src="./image/search.svg" alt="Поиск">
+                        <img class="header__nav__list__search" src="image/search.svg" alt="Поиск">
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <div class="slider">
-        <div class="slider_text">
-            <h2>Проектные решения любой сложности</h2>
-            <p>Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом
-                проектантов</p>
+        <div class="slider__text">
+            <h2>Проектные решения<br>любой сложности</h2>
+            <h3>Есть над чем задуматься: базовые сценарии поведения<br> пользователей и по сей день остаются уделом
+                проектантов</h3>
         </div>
-        <div class="slider_btn">
+        <div class="slider__btn">
             <button type="submit">Заказать расчёт</button>
         </div>
     </div>
     <div class="about">
-        <div class="about_text">
+        <div class="about__text">
             <h3>О нас</h3>
             <p>Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда
                 внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и
@@ -111,7 +114,7 @@
             </div>
         </div>
         <div class="work__right">
-            <img src="./image/work_photo_1.png" alt="" width="870" height="460">
+            <img src="image/work_photo_1.png" alt="" width="870" height="460">
         </div>
     </div>
     <div class="questions">
@@ -126,7 +129,7 @@
     </div>
     <div class="footer">
         <div class="footer__left">
-            <img src="./image/Logo_footer.png" alt="Евклид Проектные системы">
+            <img src="image/Logo_footer.png" alt="Евклид Проектные системы">
             <ul class="list">
                 <li class="footer__left__list__links">О нас</li>
                 <li class="footer__left__list__links">Проекты</li>
@@ -139,12 +142,12 @@
             <div class="footer__left__social">
                 <ul class="footer__left__social__links">
                     <li class="footer__left__social__links__element">
-                        <img src="./image/social_media.svg" alt="facebook">
+                        <img src="image/social_media.svg" alt="facebook">
                     </li>
                     <li class="footer__left__social__links__element">
-                        <img src="./image/vk.svg" alt="vk"></li>
+                        <img src="image/vk.svg" alt="vk"></li>
                     <li class="footer__left__social__links__element">
-                        <img src="./image/instagram.svg" alt="instagram">
+                        <img src="image/instagram.svg" alt="instagram">
                     </li>
                 </ul>
             </div>
@@ -156,7 +159,7 @@
             <input class="footer_center_message" type="text">
             <div class="footer_center_submit">
                 <button type="submit">Отправить данные</button>
-                <input class="footer_center_submit_checkbox" type="checkbox">
+                <input class="footer_center_submit_checkbox" id="footer_center_submit_checkbox" type="checkbox">
                 <label for="footer_center_submit_checkbox">Согласен на обработку данных</label>
 
             </div>
