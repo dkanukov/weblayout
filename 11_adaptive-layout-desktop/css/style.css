@@ -90,6 +90,7 @@ a {
 
 .about {
   margin-left: 77px;
+  margin-bottom: 100px;
 }
 
 .about__text h4 {
@@ -142,6 +143,55 @@ a {
   height: 58px;
   border: 2px solid var(--default-orange);
   background-color: Transparent;
-  cursor:pointer;
+  cursor: pointer;
   color: var(--default-white);
+}
+
+.about__cards {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 622;
+	margin-right: 61px;
+}
+
+.about__card__right {
+	width: 870px;
+	height: 295px;
+	border: 1px solid #CACACA;
+}
+
+.about__card__right__content {
+	display: flex;
+	margin-top: 35px;
+}
+
+.about__card__right__content__photo {
+	margin-left: 55px;
+	margin-top: 30px;
+}
+
+.about__card__right__content__text {
+	padding-top: 10px;
+	margin-left: 50px;
+}
+
+.about__card__right__content__text p {
+	line-height: 28px;
+}
+
+.work h4{
+	margin-left: 75px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 59px;
+}
+
+.work__left__list {
+	width: 360px;
+	margin-left: 40px;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
 }
