@@ -353,7 +353,7 @@ a {
 }
 
 .footer__center {
-  margin-left: 21px;
+  margin-left: 26px;
   margin-top: 52px;
 }
 
@@ -397,7 +397,8 @@ a {
 }
 
 .footer_center_submit {
-  margin-top: 20px;
+	display: flex;
+	margin-top: 20px;
 }
 
 .footer__center__submit__button {
@@ -407,4 +408,25 @@ a {
   border: none;
   background-color: #FF9900;
   color: var(--default-white);
+}
+
+.footer__center__submit__checkbox {
+	align-self: center;
+	/* display: none; */
+	margin-top: 10px;
+	margin-left: 25px;
+}
+
+.footer__center__submit__checkbox::before {
+	content: '';
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	border: 1px solid var(--default-white);
+	background-color: #414141;
+}
+
+.footer_center_submit label {
+	color: var(--default-white);
+	align-self: center;
 }
