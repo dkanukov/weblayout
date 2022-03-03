@@ -187,7 +187,7 @@ a {
   color: var(--default-white);
 }
 
-.about__card__left__text button {
+.about__card__left__text__button {
   margin-left: 166px;
   margin-top: 17px;
   width: 175px;
@@ -196,6 +196,16 @@ a {
   background-color: Transparent;
   cursor: pointer;
   color: var(--default-white);
+}
+
+.about__card__left__text__button:hover,
+.about__card__left__text__button:focus {
+	background-color: #FF9900;
+}
+
+.about__card__left__text__button:active {
+	background-color: #E1670E;
+	border-color: #E1670E;
 }
 
 .about__cards {
@@ -255,6 +265,24 @@ a {
 	justify-content: space-between;
 }
 
+.work__left__list__element {
+	columns: #333333;
+}
+
+.work__left__list__element__link:hover {
+	color: #FF9900;
+}
+
+.work__left__list__element__link:focus {
+	color: #333333;
+	border: 2px solid #FF9900;
+}
+
+.work__left__list__element__link:active {
+	border: none;
+	color: #E1670E;
+}
+
 .work__left__cons h3{
 	margin-top: 45px;
 	margin-bottom: -4px;
@@ -286,6 +314,15 @@ a {
 	height: 60px;
 }
 
+.button__more__info:hover,
+.button__more__info:focus {
+	background-color: #F7B045;
+}
+
+.button__more__info:active {
+	background-color: #E1670E;
+}
+
 .button__contract {
 	margin-left: 28px;
 	width: 147px;
@@ -293,6 +330,17 @@ a {
 	color: var(--default-black);
 	background-color: var(--default-white);
 	outline: 1px solid var(--default-black);
+}
+
+.button__contract:hover,
+.button__contract:focus {
+	color: #FFFFFF;
+	background-color: #666666;
+	outline-color: #666666;
+}
+
+.button__contract:active {
+	background-color: #000000;
 }
 
 .work__right {
@@ -330,6 +378,11 @@ a {
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 32px;
+}
+
+.question__list__elem p:hover {
+	color: #FF9900;
+	cursor: pointer;
 }
 
 .question__list__elem a {
