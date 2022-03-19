@@ -365,7 +365,7 @@ a {
 .question__list {
 	padding: 0;
 	margin: 0;
-  margin-top: 70px;
+  margin-top: 40px;
 	list-style: none;
 }
 
@@ -380,37 +380,16 @@ a {
 	line-height: 32px;
 }
 
-.question__list__elem p:hover {
-	color: #FF9900;
-	cursor: pointer;
+.question__list__divider {
+  padding: 0;
+  margin: 0;
+  width: 1770px;
 }
 
 .question__list__elem a {
   margin-right: 77px;
   width: 50px;
   height: 50px;
-}
-
-.question__list__elem:not(:first-child) {
-  margin-top: 61px;
-}
-
-.question__list__elem::before {
-	content: '';
-	position: absolute;
-  margin-bottom: 115px;
-	background-color: #CACACA;
-	height: 1px;
-	width: 1770px;
-}
-
-.question__list:last-child::after {
-	content: '';
-	position: absolute;
-	margin-top: 30px;
-	background-color: #CACACA;
-	height: 1px;
-	width: 1770px;
 }
 
 .footer {
