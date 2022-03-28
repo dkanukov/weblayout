@@ -379,6 +379,39 @@ a {
 .question__list__elem__link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.question__list__elem__link svg {
+  margin-right: 80px;
+}
+
+.question__list__elem__link:hover p,
+.question__list__elem__link:focus p {
+  color: #FF9900;
+}
+
+.question__list__elem__link:hover svg ellipse,
+.question__list__elem__link:focus svg ellipse {
+  fill: #FF9900;
+}
+
+.question__list__elem__link:hover svg path,
+.question__list__elem__link:focus svg path{
+  fill: white;
+}
+
+.question__list__elem__link:active p {
+  color: black;
+}
+
+.question__list__elem__link:active svg {
+  transform: rotate(45deg);
+}
+
+.question__list__elem__link:active svg ellipse {
+  fill: #ECECEC;
 }
 
 .question__list__elem__link p {
@@ -387,27 +420,7 @@ a {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-}
-
-.question__list__elem__link a {
-  align-self: center;
-  margin-right: 80px;
-}
-
-.question__list__elem:hover {
-  color: #FF9900;
-}
-
-.question__list__elem:hover .question__list__elem__divider {
-  border: 0;
-  height: 1px;
-  border-top: 1px solid #FF9900;
-}
-
-.question__list__elem:hover .question__list__elem__divider {
-  border: 0;
-  height: 1px;
-  border-top: 1px solid #FF9900;
+  color: black;
 }
 
 .footer {
