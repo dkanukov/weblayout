@@ -343,6 +343,11 @@ a {
     margin-right: 73px;
 }
 
+.work__right img {
+  width: 870px;
+  height: 460px;
+}
+
 .question {
     margin-top: 98px;
     margin-left: 75px;
