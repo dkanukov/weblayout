@@ -304,21 +304,21 @@ a {
   line-height: 20px;
 }
 
-.button__more__info {
+.button_more_info {
     width: 175px;
     height: 60px;
 }
 
-.button__more__info:hover,
-.button__more__info:focus {
+.button_more_info:hover,
+.button_more_info:focus {
     background-color: #F7B045;
 }
 
-.button__more__info:active {
+.button_more_info:active {
     background-color: #E1670E;
 }
 
-.button__contract {
+.button_contract {
     margin-left: 28px;
     width: 147px;
     height: 60px;
@@ -327,14 +327,14 @@ a {
     outline: 1px solid var(--default-black);
 }
 
-.button__contract:hover,
-.button__contract:focus {
+.button_contract:hover,
+.button_contract:focus {
     color: #FFFFFF;
     background-color: #666666;
     outline-color: #666666;
 }
 
-.button__contract:active {
+.button_contract:active {
     background-color: #000000;
 }
 
@@ -343,12 +343,12 @@ a {
     margin-right: 73px;
 }
 
-.questions {
+.question {
     margin-top: 98px;
     margin-left: 75px;
 }
 
-.questions h4 {
+.question h4 {
     margin: 0;
     padding: 0;
     font-style: normal;
@@ -577,7 +577,7 @@ a {
     padding-bottom: 100px;
 }
 
-.footer_center_submit {
+.footer__center__submit {
     display: flex;
     margin-top: 20px;
 }
