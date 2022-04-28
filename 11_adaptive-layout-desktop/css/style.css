@@ -15,7 +15,6 @@ h1, h2, h3, h4, p {
 }
 
 body {
-  max-width: 1920px;
   font-family: 'Montserrat', sans-serif;
   background-color: #fff;
 }
@@ -90,26 +89,37 @@ a {
 }
 
 .slider {
+  padding-left: 75px;
+  padding-bottom: 50px;
+}
+
+.slider__content {
+  padding: 100px 0 0 80px;
   background-image: url(../image/slider_photo.png);
   background-repeat: no-repeat;
 }
 
-.slider__text {
+.slider__content__text {
   color: var(--default-white);
 }
 
-.slider__text h1 {
+.slider__content__text h1 {
   font-weight: 800;
   font-size: 70px;
   line-height: 85px;
 }
 
-.slider__text p {
-  font-family: 'Montserrat', serif;
+.slider__content__text p {
+  margin-top: 24px;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
+}
+
+.slider__content__btn {
+  margin-top: 90px;
+  padding-bottom: 100px;
 }
 
 .slider__button,
@@ -137,12 +147,11 @@ a {
 }
 
 .about {
-  margin-left: 77px;
-  margin-bottom: 40px;
+  padding-top: 50px;
+  padding-left: 75px;
 }
 
 .about__text h2 {
-  margin: 62px 0 0;
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
@@ -150,7 +159,7 @@ a {
 }
 
 .about__text p {
-  padding-top: 5px;
+  margin-top: 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -158,27 +167,29 @@ a {
 }
 
 .about__card {
+  margin-top: 50px;
   display: flex;
-  justify-content: space-between;
-  margin-top: 46px;
-  height: 622px;
 }
 
 .about__card__left {
+  /*padding-top: 476px;*/
   flex-grow: 1;
   display: flex;
   align-items: flex-end;
+  max-width: 868px;
   background-image: url(../image/about_photo.jpg);
   background-repeat: no-repeat;
 }
 
 .about__card__left__text {
+  padding-bottom: 50px;
+  padding-left: 50px;
   display: flex;
-  margin-left: 50px;
+  align-items: center;
 }
 
 .about__card__left__text p {
-  margin: 0 0 45px;
+  margin-right: 165px;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -187,8 +198,6 @@ a {
 }
 
 .about__card__left__text__button {
-  margin-left: 165px;
-  margin-top: 17px;
   width: 175px;
   height: 60px;
   border: 3px solid var(--default-orange);
@@ -210,34 +219,21 @@ a {
 .about__cards {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 622px;
-  margin-right: 74px;
 }
 
 .about__card__right {
-  width: 870px;
-  height: 295px;
   border: 1px solid #CACACA;
 }
 
 .about__card__right__content {
   display: flex;
-  margin-top: 35px;
-}
-
-.about__card__right__content__photo {
-  margin-left: 45px;
-  margin-top: 30px;
 }
 
 .about__card__right__content__text {
-  padding-top: 10px;
-  margin-left: 65px;
+
 }
 
 .about__card__right__content__text h3 {
-  margin: 22px 0 0;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -245,7 +241,6 @@ a {
 }
 
 .about__card__right__content__text p {
-  margin: 8px 0 0;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
