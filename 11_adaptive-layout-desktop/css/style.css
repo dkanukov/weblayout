@@ -149,6 +149,7 @@ a {
 .about {
   padding-top: 50px;
   padding-left: 75px;
+  padding-bottom: 50px;
 }
 
 .about__text h2 {
@@ -174,20 +175,23 @@ a {
 
 .about__card__left {
   display: flex;
-  flex-grow: 1;
+  max-width: 868px;
+  max-height: 622px;
+  flex-grow: 0.9;
   align-items: flex-end;
   background-image: url(../image/about_photo.jpg);
   background-repeat: no-repeat;
 }
 
 .about__card__left__text {
-  width: 97%;
+  width: 100%;
+  padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #00000045;
+  background-color: #00000085;
 }
 
 .about__card__left__text p {
@@ -199,6 +203,10 @@ a {
 }
 
 .about__card__left__text__button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
   margin-right: 50px;
   width: 175px;
   height: 60px;
@@ -234,7 +242,28 @@ a {
 }
 
 .about__card__right__content {
+  position: relative;
   padding: 65px 118px 65px 300px;
+}
+
+.about__card__right__content__top:first-child::before {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 165px;
+  background-image: url("../image/about_svg_right.svg");
+  background-repeat: no-repeat;
+  right: 620px;
+}
+
+.about__card__right__content__bottom::before {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 165px;
+  background-image: url("../image/about_svg_right_down.svg");
+  background-repeat: no-repeat;
+  right: 620px;
 }
 
 .about__card__right__content h3 {
@@ -254,12 +283,12 @@ a {
 
 .work {
   display: flex;
-  margin-left: 75px;
+  padding-left: 75px;
+  padding-top: 50px;
   justify-content: space-between;
 }
 
-.work__left h4 {
-  margin-bottom: 20px;
+.work__left h2 {
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
@@ -268,8 +297,6 @@ a {
 
 .work__left__list {
   width: 455px;
-  padding: 0;
-  margin-top: 50px;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -290,7 +317,6 @@ a {
 }
 
 .work__left__cons h3 {
-  margin-top: 45px;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -305,8 +331,6 @@ a {
 }
 
 .work__left__cons__button {
-  padding: 0;
-  margin: 31px 0 0;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -328,7 +352,6 @@ a {
 }
 
 .button_contract {
-  margin-left: 28px;
   width: 147px;
   height: 60px;
   color: var(--default-black);
@@ -348,8 +371,6 @@ a {
 }
 
 .work__right {
-  margin-top: 247px;
-  margin-right: 73px;
 }
 
 .work__right img {
@@ -358,13 +379,10 @@ a {
 }
 
 .question {
-  margin-top: 98px;
-  margin-left: 75px;
+
 }
 
 .question h4 {
-  margin: 0;
-  padding: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
