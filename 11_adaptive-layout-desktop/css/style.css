@@ -400,7 +400,7 @@ a {
 }
 
 .question h2 {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
@@ -408,84 +408,44 @@ a {
 }
 
 .question__list {
+  margin: 0;
   padding: 0;
-  margin-top: 47px;
-}
-
-.question__list__elem:not(:first-child) {
-  margin-top: 20px;
-}
-
-.question__list__elem {
   list-style: none;
 }
 
-.question__list__elem__divider {
-  margin-left: 0;
-  width: 1770px;
-}
-
-.question__list__elem__link {
+.question__list__item__link {
+  padding: 40px 0 40px 0;
+  margin-bottom: -1px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
+  position: relative;
+  border: 0;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  background-color: transparent;
 }
 
-.question__list__elem__link svg {
-  margin-right: 80px;
+.question__list__item__link:hover {
+  z-index: 1;
+  border-color: #FF9900;
 }
 
-.question__list__elem__link:hover p,
-.question__list__elem__link:focus p {
+.question__list__item__link:focus {
+  outline: 0;
+  z-index: 1;
+  border-color: #FF9900;
+}
+
+.question__list__item__link:hover .question__list__item__link__question {
   color: #FF9900;
 }
 
-.question__list__elem__link:hover svg ellipse,
-.question__list__elem__link:focus svg ellipse {
-  fill: #FF9900;
-}
-
-.question__list__elem__link:hover svg path,
-.question__list__elem__link:focus svg path {
-  fill: white;
-}
-
-.question__list__elem.question__list__elem:hover .question__list__elem__divider{
-  border: 1px solid #FF9900;
-}
-
-.question__list__elem.question__list__elem:hover + .question__list__elem .question__list__elem__divider:not(:last-child){
-  border: 1px solid #FF9900;
-}
-
-.question__list__elem.question__list__elem:focus .question__list__elem__divider{
-  border: 1px solid #FF9900;
-}
-
-.question__list__elem.question__list__elem:focus + .question__list__elem .question__list__elem__divider:not(:last-child){
-  border: 1px solid #FF9900;
-}
-
-.question__list__elem__link:active p {
-  color: black;
-}
-
-.question__list__elem__link:active svg {
-  transform: rotate(45deg);
-}
-
-.question__list__elem__link:active svg ellipse {
-  fill: #ECECEC;
-}
-
-.question__list__elem__link p {
-  font-family: 'Montserrat', serif;
-  font-style: normal;
-  font-weight: 700;
+.question__list__item__link__question {
+  font-family: Montserrat;
   font-size: 24px;
+  font-weight: 700;
   line-height: 32px;
-  color: black;
 }
 
 .footer {
