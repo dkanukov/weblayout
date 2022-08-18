@@ -396,7 +396,7 @@ a {
 }
 
 .question {
-  padding: 50px 0 0 75px;
+  padding: 50px 0 50px 75px;
 }
 
 .question h2 {
@@ -411,19 +411,20 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 1770px;
 }
 
 .question__list__item__link {
-  padding: 40px 0 40px 0;
-  margin-bottom: -1px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 22px 0;
+  border-top: 1px solid #CACACA;;
+  border-bottom: 1px solid #CACACA;;
+  margin-top: -1px;
   position: relative;
-  border: 0;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
-  background-color: transparent;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .question__list__item__link:hover {
@@ -442,16 +443,16 @@ a {
 }
 
 .question__list__item__link__question {
-  font-family: Montserrat;
+  font-family: Montserrat, serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
 }
 
 .footer {
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
-  margin-top: 109px;
   background-color: #222222;
   padding-bottom: 50px;
 }
